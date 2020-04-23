@@ -7,6 +7,13 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import requests
 
+os.getcwd()
+os.chdir('/Users/justinlau/Desktop/twitter')
+CONSUMER_KEY = "Frd2xet9dvoidLQxdQ90sFRbN"
+CONSUMER_SECRET = "Cot2SxKeLDxXcqnot8FCBcIOTYXhIFf1foai0yAG8GTdXteZao"
+ACCESS_KEY = "1036131132578791424-IhbqzTBAG8mYZQNEHAD5HwyDO10iJl"
+ACCESS_SECRET = "PTRpLn0VQbFLFXYCqkf7oavd6He6Xu2dOKl4NnlAR4FtC"
+
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
