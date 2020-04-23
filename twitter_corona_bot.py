@@ -52,7 +52,7 @@ def reply_to_tweets():
 
 def tweet_reply():
     print('working')
-    twts = api.search(q="#trump")
+    twts = api.search(q="#coronavirus")
     url = "https://www.worldometers.info/coronavirus/"
     r = requests.get(url)
     data= r.text
